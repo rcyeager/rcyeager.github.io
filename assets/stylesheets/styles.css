@@ -1,0 +1,591 @@
+*, * :before, * :after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff6e8;
+}
+
+#navLogo {
+    padding-top: 10px;
+    line-height: 120px;
+}
+
+a.active{
+    color:rgb(244, 11, 57);
+}
+
+a:hover{
+    color: darkred;
+}
+
+a.active:hover{
+    color: rgb(244, 11, 57);
+}
+
+.dropdown-content a.active_drop{
+    color:#f2721b;
+}
+  
+a.logo {
+    margin-left: 30px;
+    width: 180px;
+    height: 180px;
+    margin-top: 85px;
+    display: block;
+    background: url(/assets/images/KITCHEN.png) no-repeat 0 0;
+    /* 0 0 are x,y coordination in relation to width and height setting */
+    background-size: contain;
+}
+
+.navbar{
+    position: fixed;
+    background-color: #ffebcf;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    border-bottom: 3px solid #942e2c;
+    z-index: 100;
+}
+
+nav ul{
+    right: 0;
+    margin-top: 65px;
+    position: fixed;
+    margin-right: 20px;
+    display: block;
+}
+
+
+nav ul li{
+    display: inline-block;
+    line-height: 140px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    right: 20px;
+    justify-content: space-between;
+    color: #c67d49;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding: 10px 20px 10px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    width: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: right;
+}  
+
+#navDropdown {
+    display: none;
+}
+  
+.dropdown {
+    display: block;
+    left: 0;
+}
+  
+.dropbtn {
+    color: #f2721b;
+    padding: 10px;
+    font-size: 60px;
+    border: none;
+    cursor: pointer;
+    line-height: 100px;
+}
+  
+.dropbtn:hover {
+    color: #a44704;
+    transition-duration: 0.2s;
+}
+  
+.dropdown-content {
+    display: none;
+    /* set display to none, so dropdown menu won't show till hover dropdown */
+    position: absolute;
+    background-color: #8a2a28;
+    min-width: 100%;
+    transition-duration: 0.2s;
+    z-index: 10;
+}
+  
+.dropdown-content a{
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    padding: 15px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    line-height: normal;
+    transition-duration: 0.2s;
+}
+  
+.dropdown-content a:hover {
+    background-color: #681700;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+  
+.dropdown:hover {
+    background-color: #bd3a38fe;
+    transition-duration: 0.3s;
+}
+  
+@media screen and (max-width: 660px) {
+  
+  
+    #navDropdown {
+      display: inline-block;
+      direction: rtl;
+      z-index: 1000;
+      position: fixed;
+      width: 100%;
+      /* show dropdown menu and buttuon in small screen size */
+    }
+  
+    .dropdown-content {
+      max-width: 660px;
+      z-index: 1000;
+      /* set the dropdown-content width same as the @media screen width */
+    }
+
+    .dropdown{
+        float: right;
+    }
+
+    header{
+        padding-bottom: 90px;
+    } 
+
+}
+
+.landing{
+    margin-top: 0px;
+    padding-top: 120px; 
+    background-image: url(/assets/images/landingimage.jpg); 
+    height: 88vh; 
+    display: flex; 
+    flex-direction: column; 
+    background-size: cover;
+}
+
+#landing_box{
+    background-color: #b7c093b9; 
+    height: 280px; 
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.landing_type{
+    font-family: serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+#landing_desc{
+    font-size: 20px;
+    text-transform: none;
+    padding: 10px 0px 20px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.landing_btn{
+    border: none;
+    background-color: rgb(134, 164, 81);
+    padding: 5px 10px 5px 10px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+.landing_btn a{
+    color: white;
+    cursor: pointer;
+}
+
+.landing_btn:hover{
+    background-color: rgb(136, 170, 76);
+}
+
+
+
+@media screen and (max-width: 660px){
+
+    #landing_box{
+        max-width: 660px;
+        height: 350px;
+    }
+    
+
+    .landing_type{
+        max-width: 450px;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+
+
+
+}
+
+.index_title{
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+    font-family: serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #942e2c;
+    font-size: 40px;
+}
+
+.recipe_types{
+    display: inline-block;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    margin: 5px 15px 10px 15px;
+}
+
+.recipe_types_btn{
+    background-color:rgb(234, 202, 143);
+    color: white;
+    border: none;
+    padding: 8px;
+    margin: 20px 10px 0px 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.recipe_types_btn:hover{
+    color: salmon;
+    background-color: wheat;
+}
+
+.recipe_sctn{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem,16rem));
+    grid-gap: 2rem;
+    justify-content: center;
+    padding: 30px;
+}
+
+.card{
+    overflow: hidden;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.601);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+    background-color: white;
+}
+
+.card_image{
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.card_title{
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+
+}
+
+.card_description{
+    margin: 1rem;
+    text-align: center;
+    color: #942e2c;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card_btn{
+    padding: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    background-color: orange;
+    color: brown;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.card_btn:hover{
+    color: orange;
+    background-color: brown;
+    cursor: pointer;
+    transition: 200ms ease-in;
+    
+}
+
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#carousel_cap{
+    text-align: left;
+    margin:  auto;
+    font-size: 7vmin;
+    padding: 30px 40px 0px 40px;
+}
+
+#feat_block{
+    background-color: rgba(0, 0, 128, 0.391);
+    height: 230px;
+    width: 100vmin;
+    display: block;
+}
+
+#carousel_cap{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+#carousel_desc{
+    padding: 0px 40px 0px 40px;
+    color: white;
+    text-align: left;
+    font-size: 3vmin;
+    text-align: left;
+    margin-top: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.feat_recipe_btn{
+    padding: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    margin: 10px 40px 0px 40px;
+    border-radius: 10px;
+}
+
+.feat_recipe_btn:hover{
+    color: darkblue;
+    background-color: white;
+    cursor: pointer;
+}
+
+.slide-btn{
+    display: none;
+}
+
+
+.carousel{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+    
+}
+
+.slide{
+    float: left;
+    height: 100%;
+    width: 0;
+    transition: width .3s linear;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slide > *{
+    transition: transform .15s linear;
+    transform: scale(0);
+}
+
+.labels{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.labels label{
+    display: inline-block;
+    background-color: transparent;
+    width: 3vmin;
+    height: 3vmin;
+    border-radius: 15px;
+    margin: 5vmin 2vmin;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.carousel .one,
+.carousel .two,
+.carousel .three{
+    background-position: center center;
+    background-size: cover;
+}
+
+.carousel .one{
+    background-image: url(/assets/images/featuredimage.jpg);
+    padding-top: 50px;
+    background-repeat: no-repeat;
+}
+
+.carousel .two{
+    background-image: url(/assets/images/featuredimage2.jpg);
+    padding-top: 50px;
+    background-repeat: no-repeat;
+}
+
+.carousel .three{
+    background-image: url(/assets/images/featuredimage4.jpg);
+    padding-top: 50px;
+    background-repeat: no-repeat;
+}
+
+#slide-btn-1:checked ~ .one,
+#slide-btn-2:checked ~ .two,
+#slide-btn-3:checked ~ .three{
+    width: 100%;
+}
+
+#slide-btn-1:checked ~ .one > *,
+#slide-btn-2:checked ~ .two > *,
+#slide-btn-3:checked ~ .three > *{
+    transform: scale(1);
+}
+
+#slide-btn-1:checked ~ .labels label[for=slide-btn-1],
+#slide-btn-2:checked ~ .labels label[for=slide-btn-2],
+#slide-btn-3:checked ~ .labels label[for=slide-btn-3]{
+    background-color: white;
+
+}
+
+@media screen and (max-width: 660px){
+    .carousel{
+        height: 50vh;
+    }
+
+    #feat_block{
+        height: 25vmax;
+        margin-right: 20px;
+        max-width: 660px;
+    }
+
+    .featured_type{
+        max-width: 450px;
+        margin-left: 90px;
+    }
+
+    .index_title{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 660px){
+
+    #feat_block{
+        margin-top: 130px;
+        width: fit-content;
+    }
+
+    .index_title{
+        margin-top: 120px;
+    }
+    
+    .landing{
+        margin-top: 100px;
+    }
+}
+
+.feat_recipes{
+    display: flex;
+    margin: 0px;
+}
+
+.feat_recipes_sctn{
+    width: 90%;
+    float: right;
+    margin-top: 30px;
+    margin-left: 20px;
+    
+}
+
+.feat_recipes_index{
+    width: 15%;
+    margin: 0px 50px 10px 50px;
+    align-items: center;
+    float: left;
+}
+
+#feat_index_title{
+    margin: -50px 0px 0px 0px;
+    display: inline-block;
+    font-size: smaller;
+}
+
+#feat_recipes_head{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    color: #bd3a38;
+    padding-bottom: 3px;
+}
+
+@media screen and (max-width: 660px){
+
+    .feat_recipes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feat_recipes_index{
+        width: 100%;
+        align-items: center;
+    }
+
+    #feat_index_title{
+        margin-right: 0px;
+    }
+
+}

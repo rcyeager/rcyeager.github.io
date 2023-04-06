@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conrad Kitchen2</title>
+    
+    <!--CSS link-->
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+    <script type="text/javascript" src="./assets/javascripts/script.js"></script>
+    <link rel="stylesheet" href="./assets/stylesheets/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<!--header section-->
+<header>
+    <div class="flex-container">
+        <nav id="navDropdown">
+            <div class="dropdown">
+            <span class="dropbtn">&#9776;</span>
+            <div class="dropdown-content">
+                <a href="featured.html" class="active_drop">Featured</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="#">Blog</a>
+                <a href="#">About</a>
+            </div>
+            </div>
+        </nav>
+        <div class="navbar">
+            <nav style="height: 100px; width: 100%; display: flex; align-items: center;">
+                <nav id="navLogo"><a class="logo" href="index.html"></a></nav>
+                <ul>
+                    <li>
+                        <a href="featured.html" class="active">Featured</a>
+                        <a href="recipes.html">Recipes</a>
+                        <a href="#">Blog</a>
+                        <a href="#">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+        
+    
+</header>
+<!--end of header section-->
+
+<!-- Slideshow container -->
+<div class="carousel">
+    <input type="radio" name="carousel" id="slide-btn-1" class="slide-btn" checked />
+    <input type="radio" name="carousel" id="slide-btn-2" class="slide-btn" />
+    <input type="radio" name="carousel" id="slide-btn-3" class="slide-btn" />
+    <div class="slide one">
+        <section id="feat_block">
+            <h1 id="carousel_cap">Thanksgiving Turkey</h1>
+            <p id="carousel_desc">A delicious holiday meal for the family to share.</p>
+            <button class="feat_recipe_btn">Go to Recipe</button>
+        </section>
+    </div>
+    <div class="slide two">
+        <section id="feat_block">
+            <h1 id="carousel_cap">Skillet Pancakes</h1>
+            <p id="carousel_desc">Warm, fluffy pancakes to start your morning off right.</p>
+            <button class="feat_recipe_btn">Go to Recipe</button>
+        </section>
+    </div>
+    <div class="slide three">
+        <section id="feat_block">
+            <h1 id="carousel_cap">Sweet Chili Chicken</h1>
+            <p id="carousel_desc">Tangy, spicy, and the perfect dish for when guests come to visit.</p>
+            <button class="feat_recipe_btn">Go to Recipe</button>
+        </section>
+    </div>
+    <div class="labels">
+        <label for="slide-btn-1"></label>
+        <label for="slide-btn-2"></label>
+        <label for="slide-btn-3"></label>
+    </div>
+</div>
+
+<!-- end of slideshow container -->
+
+<!--featured recipes-->
+<div class="feat_recipes">
+        <div class="feat_recipes_index">
+            <div class="index_title">
+                    <div class="recipe_types">
+                        <p id="feat_index_title">Recipe Type</p>
+                        <section></section>
+                        <button class="recipe_types_btn">Breakfast</button>
+                        <button class="recipe_types_btn">Lunch</button>
+                        <button class="recipe_types_btn">Dinner</button>
+                        <button class="recipe_types_btn">Dessert</button>
+                        <button class="recipe_types_btn">Vegetarian</button>
+                        <button class="recipe_types_btn">Gluten Free</button>
+                        <button class="recipe_types_btn">Vegan</button>
+                    </div>
+            </div>
+        </div>
+        <div class="feat_recipes_sctn">
+        <section id="feat_recipes_head"><p>Featured Recipes</p></section>
+        <section class="recipe_sctn">
+            <div class="card">
+                <div class="card_body">
+                    <img src="./assets/images/recipe 1.jpg" alt="" class="card_image">
+                    <p class="card_title">Avocado Appetizer</p>
+                    <p class="card_description">30 MIN | Vegetarian</p>
+                </div>
+                <button class="card_btn"><a href="#"></a>View Recipe</button>
+            </div>
+            
+            <div class="card">
+                <div class="card_body">
+                    <img src="./assets/images/recipe2.jpg" alt="" class="card_image">
+                    <p class="card_title">Cauliflower Soup</p>
+                    <p class="card_description">30 MIN | Vegetarian</p>
+                </div>
+                <button class="card_btn">View Recipe</button>
+            </div>
+
+            <div class="card">
+                <div class="card_body">
+                    <img src="./assets/images/recipe3.jpg" alt="" class="card_image">
+                    <p class="card_title">Tomato Bisque</p>
+                    <p class="card_description">30 MIN | Vegetarian</p>
+                </div>
+                <button class="card_btn">View Recipe</button>
+            </div>
+
+            <div class="card">
+                <div class="card_body">
+                    <img src="./assets/images/recipe4.jpg" alt="" class="card_image">
+                    <p class="card_title">Red Lentil Curry</p>
+                    <p class="card_description">30 MIN | Vegetarian</p>
+                </div>
+                <button class="card_btn">View Recipe</button>
+            </div>
+
+            <div class="card">
+                <div class="card_body">
+                    <img src="./assets/images/recipe5.jpg" alt="" class="card_image">
+                    <p class="card_title">Salmon Poke Bowl</p>
+                    <p class="card_description">30 MIN | Vegetarian</p>
+                </div>
+                <button class="card_btn">View Recipe</button>
+            </div>
+
+            <div class="card">
+                <div class="card_body">
+                    <img src="./assets/images/recipe6.jpg" alt="" class="card_image">
+                    <p class="card_title">Skillet Salmon</p>
+                    <p class="card_description">30 MIN | Vegetarian</p>
+                </div>
+                <button class="card_btn">View Recipe</button>
+            </div>
+
+            <div class="card">
+                <div class="card_body">
+                    <img src="./assets/images/recipe7.jpg" alt="" class="card_image">
+                    <p class="card_title">Winter Arugula</p>
+                    <p class="card_description">30 MIN | Vegetarian</p>
+                </div>
+                <button class="card_btn">View Recipe</button>
+            </div>
+
+            <div class="card">
+                <div class="card_body">
+                    <img src="./assets/images/recipe8.jpg" alt="" class="card_image">
+                    <p class="card_title">Classic Bruschetta</p>
+                    <p class="card_description">30 MIN | Vegetarian</p>
+                </div>
+                <button class="card_btn">View Recipe</button>
+            </div>
+
+            <div class="card">
+                <div class="card_body">
+                    <img src="./assets/images/cala-w6ftFbPCs9I-unsplash.jpg" alt="" class="card_image">
+                    <p class="card_title">Sweet Potato Soup</p>
+                    <p class="card_description">30 MIN | Vegetarian</p>
+                </div>
+                <button class="card_btn">View Recipe</button>
+            </div>
+</div>
+</body>
+
+</html>
